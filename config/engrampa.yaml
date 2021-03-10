@@ -1,0 +1,58 @@
+7z:
+  both: engrampa %in% -a %out%
+exe:
+  both: engrampa %in% -a %out%
+lrz:
+  both: engrampa %in% -a %out%
+odp:
+  both: engrampa %in% -a %out%
+ods:
+  both: engrampa %in% -a %out%
+odt:
+  both: engrampa %in% -a %out%
+otp:
+  both: engrampa %in% -a %out%
+ott:
+  both: engrampa %in% -a %out%
+tar.lzma:
+  both: engrampa %in% -a %out%
+z:
+  both: engrampa %in% -a %out%
+zip:
+  both: engrampa %in% -a %out%
+arj:
+  both: engrampa %in% -a %out%
+cbr:
+  both: engrampa %in% -a %out%
+cbz:
+  both: engrampa %in% -a %out%
+ear:
+  both: engrampa %in% -a %out%
+jar:
+  both: engrampa %in% -a %out%
+rar:
+  both: engrampa %in% -a %out%
+tar.7z:
+  both: engrampa %in% -a %out%
+tar.bz:
+  both: engrampa %in% -a %out%
+tar.bz2:
+  both: engrampa %in% -a %out%
+tar.gz:
+  both: engrampa %in% -a %out%
+tar.lrz:
+  both: engrampa %in% -a %out%
+tar.xz:
+  both: engrampa %in% -a %out%
+tar.z:
+  both: engrampa %in% -a %out%
+taz:
+  both: engrampa %in% -a %out%
+tbz:
+  both: engrampa %in% -a %out%
+tbz2:
+  both: engrampa %in% -a %out%
+tgz:
+  both: engrampa %in% -a %out%
+war:
+  both: engrampa %in% -a %out%

@@ -1,0 +1,42 @@
+# All tested and working on Kali
+# bcm, zst and br are available thanks to peazip
+
+7z:
+  both: 7z a -t7z -mmt=30 -mx=1 %out% %in%
+arc:
+  both: arc a %out% %in%
+arj:
+  both: arj a %out% %in%
+bcm:
+  single: lib/bcm -b20MB %in% %out%
+  multi: tar -cvf tempfiletobedel %in% && lib/bcm -b20MB tempfiletobedel %out% && rm tempfiletobedel
+br:
+  multi: tar -cvf tempfiletobedel %in% && lib/brotli -3 tempfiletobedel -o %out% && rm tempfiletobedel
+  single: lib/brotli -3 %in% -o %out%
+exe:
+  both: engrampa %in% -a %out%
+lrz:
+  multi: tar -cvf tempfiletobedel %in% && lrzip -l -o %out% tempfiletobedel && rm tempfiletobedel
+  single: lrzip -l -o %out% %in%
+jar:
+  both: jar cf %out% %in%
+qp:
+  both: lib/qpress %in% %out%
+rar:
+  both: rar a %out% %in%
+sfx:
+  both: 7z a -sfx -mmt=30 -mx=1 %out% %in%
+tar.bzip2:
+  both: tar --bzip2 -cv %in% -f %out%
+tar.gzip:
+  both: tar --gzip -cv %in% -f %out%
+tar.xz:
+  both: tar --xz -cv %in% -f %out%
+war:
+  both: jar -cvf %out% %in%
+zip:
+  both: zip -9 %out% %in%
+zpaq:
+  both: zpaq add %out% %in%
+zst:
+  both: lib/zstd -T0 -q -3 %in% -o %out%
