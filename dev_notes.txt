@@ -1,0 +1,14 @@
+# IMAGE
+
+## imagemagick has bad memory optimization, can't create big images, compression not always working as expected
+sudo apt install graphicsmagick-imagemagick-compat
+convert -size 15000x15000 xc:white -compress lzw test.tiff
+convert -size 10000x10000 xc:white -compress zip test.jpg
+convert -size 10000x10000 xc:white -compress zip test.png
+
+## vips has better memory optimization but compression does not seem to work as intended, also bad documentation
+sudo apt install libvips-tools
+vips black test.png 10000 10000
+vips tiffsave test.png test_compress.tiff --compression deflate
+vips pngsave test.png test_compress.png --compression 9
+vips jpegsave test.png test_compress.jpeg --optimize-coding -Q 90
