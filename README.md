@@ -8,7 +8,7 @@ Use cases:
 - Crash or keep busy AV/EDR
 - Crash automatic forensic tools
 - Crash/bypass antispam
-- DOS on anything that decompress (more than I can think of)
+- DoS on anything that decompress (more than I can think of)
 
 Currently supporting the following formats: 7z, arc, arj, bcm, br, exe, lrz, jar, qp, rar, sfx, tar.bzip2, tar.gzip, tar.xz, war, zip, zpaq, zst
 
