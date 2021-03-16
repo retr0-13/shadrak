@@ -12,7 +12,7 @@ Use cases:
 
 Currently supporting the following formats: 7z, arc, arj, bcm, br, exe, lrz, jar, qp, rar, sfx, tar.bzip2, tar.gzip, tar.xz, war, zip, zpaq, zst
 
-Future improvements: also working on nested arrays, currently supporting json (thanks to jtorvald) using json.sh, to be integrated in the main tool soon with additional formats (cbor, msgpack, ...). Images are more complex than expected, if you are interested see dev_notes.txt
+Future improvements: also working on nested arrays, currently supporting json (thanks to jtorvald) using json.sh, to be integrated in the main tool soon with additional formats (cbor, msgpack, ...). Images are more complex than expected, if you are interested see dev_notes.txt. Also add https://www.bamsoftware.com/hacks/zipbomb/
 
 # Installation
 
