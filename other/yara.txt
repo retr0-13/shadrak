@@ -1,0 +1,35 @@
+https://www.hexacorn.com/blog/2022/01/16/yara-carpet-bomber/
+
+ my $cnt=0;
+ my $n=0;
+ while (<>)
+ {
+     s/[\r\n]+//g;
+     next if length($_)<6;
+     next if /^[0-9]/;
+     s/\"/\\"/g;
+ if ($n==0)
+  {
+   print "
+ rule ".sprintf("eng_%04d", $cnt)."
+ {
+  strings:
+ ";
+   }
+     print "\$ = \"$_\" ascii wide nocase\n";
+     $n++;
+     if ($n>9999)
+     {
+       $cnt++;
+       $n=0;
+     print "
+        condition:
+          any of them
+     }
+     ";
+     }
+ }
+ print "condition:
+         any of them
+ }
+ ";
